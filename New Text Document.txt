@@ -1,0 +1,67 @@
+fn main(){
+let number=9;
+if number>0 
+{
+println!("Number is positive");
+}
+else if number <0
+{
+println!("Number is Negative");
+}
+else if number ==0{
+println!("Number is Equal to Zero");
+}
+}
+.............................
+fn main(){
+print_on_console(3,4.0,true,"osama".to_string());
+}
+fn print_on_console(x:i32,f:f32,t:bool,s:String){
+println!("The value of Integer is {}",x);
+println!("The value of Boolean is {}",t);
+println!("The value of Float is {}",f);
+println!("The value of String is {}",s);
+}
+..........................................................
+fn main(){
+let result=square(2);
+println("The Square of 2 is {}",result);
+}
+fn square(x:i32)->{
+x*x
+};
+
+use std::convert::TryInto;
+fn main(){
+let result=square(2);
+println!("The Square of 2 is {}",result);
+}
+fn square(x:i32)-> usize{
+(x*x).try_into().unwrap()
+}
+.....................................
+fn main(){
+let marks1= Urdu();
+let marks2= math();
+let result=marks1+marks2;
+println!("The Total marks are {}",result);
+let percentage=per(result);
+println!("The percentage is {}",percentage);
+if per>=70{
+println!("Pass");
+}
+else{
+println!("Fail");
+}
+}
+fn Urdu()->i32{
+50
+}
+fn math()->i32{
+70
+}
+fn per(x:i32)->{
+ x=x/200*100
+}
+ 
+..............................................
